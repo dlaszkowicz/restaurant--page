@@ -6,6 +6,9 @@ function initialLoad() {
   /* createRestaurantHomePage(); */
   createRestaurantContactPage();
   /* createRestaurantMenuPage(); */
+  menuBtn.addEventListener("click", function () {
+    createRestaurantMenuPage();
+  });
 }
 
 export default initialLoad;

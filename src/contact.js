@@ -47,6 +47,12 @@ const createRestaurantContactPage = () => {
 
   contactForm.appendChild(termsContainer);
 
+  const submitBtn = document.createElement("button");
+  submitBtn.type = "submit";
+  submitBtn.textContent = "Send";
+
+  contactForm.appendChild(submitBtn);
+
   container.appendChild(formContainer);
   formContainer.appendChild(contactForm);
 };
