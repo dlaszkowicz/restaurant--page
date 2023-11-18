@@ -142,6 +142,19 @@ form button {
   form div input {
     margin-left: 12px;
   }
+  .menu-container {
+    margin-top: 700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .home-container img {
+    height: 300px;
+    width: auto;
+    font-size: 2px;
+  }
+  .home-container p {
+    font-size: 18px;
+  }
 }
 nav {
   display: flex;
