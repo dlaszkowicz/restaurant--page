@@ -1,9 +1,12 @@
 const createRestaurantHomePage = () => {
   const container = document.querySelector(".container");
 
+  const homeContainer = createElement("div");
+  homeContainer.classList.add("home-containter");
+
   const imgHolder = document.createElement("div");
   imgHolder.classList.add("img-holder");
-  container.appendChild(imgHolder);
+  homeContainer.appendChild(imgHolder);
 
   const img = document.createElement("img");
   img.src = "../images/logo.png";
@@ -20,6 +23,6 @@ const createRestaurantHomePage = () => {
   const btnBookNow = document.createElement("button");
   btnBookNow.textContent = "BOOK NOW";
   btnBookNow.classList.add("book-now");
-  container.appendChild(btnBookNow);
+  homeContainer.appendChild(btnBookNow);
 };
 export default createRestaurantHomePage;
