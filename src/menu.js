@@ -1,5 +1,5 @@
 const createRestaurantMenuPage = () => {
-  const container = document.querySelector(".container");
+  const container = document.querySelector(".content-area");
   const menuContainer = document.createElement("div");
   menuContainer.classList.add("menu-container");
   container.appendChild(menuContainer);

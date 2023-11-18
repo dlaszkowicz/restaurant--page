@@ -1,8 +1,8 @@
 const createRestaurantHomePage = () => {
-  const container = document.querySelector(".container");
+  const container = document.querySelector(".content-area");
 
-  const homeContainer = createElement("div");
-  homeContainer.classList.add("home-containter");
+  const homeContainer = document.createElement("div");
+  homeContainer.classList.add("home-container");
 
   const imgHolder = document.createElement("div");
   imgHolder.classList.add("img-holder");
@@ -24,5 +24,7 @@ const createRestaurantHomePage = () => {
   btnBookNow.textContent = "BOOK NOW";
   btnBookNow.classList.add("book-now");
   homeContainer.appendChild(btnBookNow);
+
+  container.appendChild(homeContainer);
 };
 export default createRestaurantHomePage;
