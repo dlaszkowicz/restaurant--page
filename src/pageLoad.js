@@ -1,8 +1,10 @@
 import createRestaurantHomePage from "./restaurant";
 import createRestaurantMenuPage from "./menu";
 import createRestaurantContactPage from "./contact";
+import createFooter from "./footer";
 
 function initialLoad() {
+  createFooter();
   const contentArea = document.querySelector(".content-area");
   function clearContainer() {
     contentArea.innerHTML = "";

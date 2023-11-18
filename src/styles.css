@@ -64,6 +64,7 @@ button:hover {
   width: 100%;
   text-align: center;
   padding: 10px 0px;
+  font-size: 20px;
 }
 a {
   text-decoration: none;
