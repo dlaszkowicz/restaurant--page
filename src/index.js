@@ -1,3 +1,5 @@
-import pageLoad from "./pageLoad";
+import initialLoad from "./pageLoad";
+import nav from "./nav";
 
-loadPage();
+initialLoad();
+nav();

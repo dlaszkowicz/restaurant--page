@@ -1,7 +1,11 @@
 import createRestaurantHomePage from "./restaurant";
+import createRestaurantContactPage from ".";
 
 function initialLoad() {
-  createRestaurantHomePage();
+  createRestaurantHomePage(); /*
+  createRestaurantContactPage(); 
+  createRestaurantMenuPage();
+*/
 }
 
 export default initialLoad;

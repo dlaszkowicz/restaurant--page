@@ -7,6 +7,7 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/index.js":
@@ -15,8 +16,17 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\n\nloadPage();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ \"./src/nav.js\");\n\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/nav.js":
+/*!********************!*\
+  !*** ./src/nav.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst nav = () => {\n  const container = document.querySelector(\".container\");\n\n  const navBar = document.createElement(\"nav\");\n  container.appendChild(navBar);\n\n  const menuBtn = document.createElement(\"button\");\n  menuBtn.textContent = \"Menu\";\n  const homeBtn = document.createElement(\"button\");\n  homeBtn.textContent = \"Home\";\n\n  const contactBtn = document.createElement(\"button\");\n  contactBtn.textContent = \"Contact\";\n\n  navBar.appendChild(menuBtn);\n  navBar.appendChild(homeBtn);\n  navBar.appendChild(contactBtn);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (nav);\n\n\n//# sourceURL=webpack://restaurant-page/./src/nav.js?");
 
 /***/ }),
 
@@ -26,8 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _restaurant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./restaurant */ \"./src/restaurant.js\");\n/* harmony import */ var _restaurant__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_restaurant__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfunction initialLoad() {\n  _restaurant__WEBPACK_IMPORTED_MODULE_0___default()();\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialLoad);\n\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _restaurant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./restaurant */ \"./src/restaurant.js\");\n\n\nfunction initialLoad() {\n  (0,_restaurant__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialLoad);\n\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
 
 /***/ }),
 
@@ -35,9 +44,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!***************************!*\
   !*** ./src/restaurant.js ***!
   \***************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("const createRestaurantHomePage = () => {\n  const content = document.querySelector(\"content\");\n  const pageContent = document.createElement(\"div\");\n  pageContent.classList.add(\"page-content\");\n};\n\n\n//# sourceURL=webpack://restaurant-page/./src/restaurant.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst createRestaurantHomePage = () => {\n  const container = document.querySelector(\".container\");\n\n  const imgHolder = document.createElement(\"div\");\n  imgHolder.classList.add(\"img-holder\");\n  container.appendChild(imgHolder);\n\n  const img = document.createElement(\"img\");\n  img.src = \"../images/logo.png\";\n  img.width = \"560\";\n  img.height = \"392\";\n\n  const imgText = document.createElement(\"p\");\n  imgText.innerHTML = `Savor artisanal burger bliss, where each<br>\n  bite reveals a symphony of flavors tailored<br>\n  to delight.`;\n  imgHolder.appendChild(img);\n  imgHolder.appendChild(imgText);\n\n  const btnBookNow = document.createElement(\"button\");\n  btnBookNow.textContent = \"BOOK NOW\";\n  btnBookNow.classList.add(\"book-now\");\n  container.appendChild(btnBookNow);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createRestaurantHomePage);\n\n\n//# sourceURL=webpack://restaurant-page/./src/restaurant.js?");
 
 /***/ })
 
@@ -68,18 +77,6 @@ eval("const createRestaurantHomePage = () => {\n  const content = document.query
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
